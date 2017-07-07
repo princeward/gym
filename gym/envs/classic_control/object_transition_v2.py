@@ -93,7 +93,7 @@ class ObjectTransitionV2Env(gym.Env):
             f_x += action[2*i] * math.cos(action[2*i+1])
             f_y += action[2*i] * math.sin(action[2*i+1])
 
-        f_sig = math.sqrt(math.pow(f_x, 2) + math.pow(f_x, 2)) # magnitude of the robot force
+        f_sig = math.sqrt(math.pow(f_x, 2) + math.pow(f_y, 2)) # magnitude of the robot force
 
         ##### deal with planar object dynamics
         if ( (f_sig <= self.friction) and (_norm(velocity) <= 0.1) ):
