@@ -120,6 +120,12 @@ register(
     max_episode_steps=300,
 )
 
+register(
+    id='ObjectTransition-v5',
+    entry_point='gym.envs.classic_control:ObjectTransitionV5Env',
+    max_episode_steps=300,
+)
+
 # Box2d
 # ----------------------------------------
 
