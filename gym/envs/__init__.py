@@ -99,12 +99,24 @@ register(
 register(
     id='ObjectTransition-v1',
     entry_point='gym.envs.classic_control:ObjectTransitionV1Env',
-    max_episode_steps=500,
+    max_episode_steps=300,
 )
 
 register(
     id='ObjectTransition-v2',
     entry_point='gym.envs.classic_control:ObjectTransitionV2Env',
+    max_episode_steps=300,
+)
+
+register(
+    id='ObjectTransition-v3',
+    entry_point='gym.envs.classic_control:ObjectTransitionV3Env',
+    max_episode_steps=300,
+)
+
+register(
+    id='ObjectTransition-v4',
+    entry_point='gym.envs.classic_control:ObjectTransitionV4Env',
     max_episode_steps=300,
 )
 
